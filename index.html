@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DynoDigit</title>
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <script src="./assets/js/index.js"></script>
+</head>
+<body>
+  <header>
+    <h1>DynoDigit</h1>
+    <p>We provide different tools for your needs.</p>
+    <nav>
+      <ul class="vnav">
+        <li><a class="btn" href="#demo">Text Changer</a></li>
+        <li><a class="btn" href="./pages/counter.html">Counter</a></li>
+        <li><a class="btn" href="./pages/gallery.html ">Gallery</a></li>
+        <li><a class="btn"href="./pages/todo.html">To do list</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="demo">
+      <h2>Demo</h2>
+      <h3>Text Changer</h3>
+      <form onsubmit="showp(); event.preventDefault()" >
+        <p>
+          <label for="demoin">Insert the text you want here : </label>
+        </p>
+        <input id="demoin" type="text" name="demoin" placeholder="Type here">
+        <button type="submit">Save</button>
+      </form>
+      <p id="demop"></p>
+      <div class="flexra">
+        <button id="txtChanger1" type="button" onclick="tohello()">Change text to Hello</button>
+        <button id="colorChanger1" type="button" onclick="tored()">Change color to red</button>
+      </div>
+      <div class="flexra">
+        <button id="txtChanger0" type="button" onclick="toin()">Change text to original</button>
+        <button id="colorChanger0" type="button" onclick="toblack()">Change color to black</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    
+  </footer>
+</body>
+</html>

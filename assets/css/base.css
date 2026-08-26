@@ -1,0 +1,105 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+}
+header, section{
+  height: 100vh;
+}
+#demo{
+  vertical-align: middle;
+}
+.flexra button{
+  margin: 10px auto;
+}
+
+button{
+  padding: 10px;
+  background-color: white;
+  border-width: 3px;
+  border-radius: 10px;
+}
+
+.vnav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: max-content; 
+  margin: auto;
+  height: 60vh;
+}
+.vnav li{width:100%;}
+.vnav a{
+  width: 100%;
+}
+/* --------------*/
+ul, ol, menu {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul ul, ol ol, ul ol, ol ul { padding-left: 20px; }
+
+menu, nav ol {
+  list-style-type: none;
+  width: max-content;
+}
+
+  menu li, nav li { margin: 10px auto; }
+
+div > a, li > a { text-decoration: none; }
+
+li > a { font-size: 1.2rem; }
+
+.centli {
+  margin: auto;
+  padding: 20px;
+  width: fit-content;
+}
+.centli li {
+  margin: 5px auto;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.flexra{
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  display: inline-block;
+  border: solid 1px white;
+  border-radius: 20px;
+  padding: 13px;
+  background-color: dodgerblue;
+  color: white;
+  transition: 0.1s ease;
+  margin: 5px;
+} 
+.btn:active {
+  transform: scale(0.95);
+}
+
+
+
+
+/* ----------*/
+#demoin{
+  width: 80%;
+  height: 50px;
+}
+#demop{
+  border: solid 1px;
+  border-radius: 8px;
+  display: none;
+  padding: 5px;
+  margin: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.dnone{
+  display: none;
+}
