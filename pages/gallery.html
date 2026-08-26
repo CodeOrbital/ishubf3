@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>DynoDigit</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
 </head>
-
 <body>
-  
+  <header>
+    <h1>Counter</h1>
+    <h2>DynoDigit</h2>
+    <p>We provide different tools for your needs.</p>
+    <nav>
+      <ul class="vnav">
+        <li><a class="btn" href="../index.html">Home</a></li>
+        <li><a class="btn" href="./counter.html">Counter</a></li>
+        <li><a class="btn" href="#gallery">Gallery</a></li>
+        <li><a class="btn"href="./todo.html">To do list</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="counter">
+      <h3>Counter</h3>
+      <p id="cnum">0</p>
+      <div class="flexra">
+        <button class="cont" id="reducer" type="button" onclick="decrement()">-</button>
+        <button class="cont" id="adder" type="button" onclick="increment()">+</button>
+      </div>
+      <div id="warning">Counter can't be negative!</div>
+    </section>
+  </main>
+  <footer>
+    
+  </footer>
+  <script src="../assets/js/counter.js"></script>
 </body>
-
 </html>
