@@ -9,7 +9,8 @@
 </head>
 <body>
   <header>
-    <h1>DynoDigit</h1>
+    <h1>Home</h1>
+    <h2>DynoDigit</h2>
     <p>We provide different tools for your needs.</p>
     <nav>
       <ul class="vnav">
@@ -22,17 +23,20 @@
   </header>
   <main>
     <section id="demo">
-      <h2>Demo</h2>
-      <h3>Text Changer</h3>
+      <h3>Demo</h3>
+      <h4>Text Changer</h4>
       <form onsubmit="showp(); event.preventDefault()" >
         <p>
           <label for="demoin">Insert the text you want here : </label>
         </p>
-        <input id="demoin" type="text" name="demoin" placeholder="Type here">
-        <button type="submit">Save</button>
+        <div>
+          <input id="demoin" type="text" name="demoin" placeholder="Type here">
+          <br>
+          <button style="margin-top:20px;" type="submit">💾 Save</button>
+        </div>
       </form>
       <p id="demop"></p>
-      <div class="flexra">
+      <div class="flexra" style="margin-top: 50px;">
         <button id="txtChanger1" type="button" onclick="tohello()">Change text to Hello</button>
         <button id="colorChanger1" type="button" onclick="tored()">Change color to red</button>
       </div>

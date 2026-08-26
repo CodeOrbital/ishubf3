@@ -4,6 +4,11 @@
 body{
   text-align: center;
 }
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Times New Roman', Times, serif;
+}
+
 header, section{
   height: 100vh;
 }
@@ -89,6 +94,7 @@ li > a { font-size: 1.2rem; }
 #demoin{
   width: 80%;
   height: 50px;
+  text-align: center;
 }
 #demop{
   border: solid 1px;
@@ -102,4 +108,39 @@ li > a { font-size: 1.2rem; }
 
 .dnone{
   display: none;
+}
+
+
+/* ------------ */
+.cont{
+  font-size: 2rem;
+  border: solid 1px;
+  transition: 0.1s ease;
+}
+.cont:active{
+  transform: scale(0.95);
+}
+#reducer{
+  color: red;
+}
+#adder{
+  color: blue;
+}
+#cnum{
+  display: flex;
+  width: 70vw;
+  height: 70vw;
+  border: solid 5px dodgerblue;
+  padding: 10px;
+  margin: 50px auto;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#warning{
+  display: none;
+  color: red;
+  padding: 10px;
+  margin: 10px auto;
 }
