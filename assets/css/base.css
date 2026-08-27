@@ -162,14 +162,23 @@ select, #poster{
 .done{
   text-decoration: line-through;
 }
-#taskList{
+.taskitem{
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 30px auto 20%;
   margin: 40px auto;
-  
+  width: 90%;
+}
+.pspan{
+  text-align: left;
 }
 
 .deletebtn{
   border: solid 1px;
   color: red;
+  margin: 3px auto;
 }
+
+/**/
+*{
+  border: solid 1px;
+}/**/

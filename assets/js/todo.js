@@ -15,19 +15,24 @@ function addTask(){
   deletebtn.addEventListener('click',
     function(event){
       let toRemove=confirm('Do you want to remove the task?');
+      let targetp= event.currentTarget.parentElement;
       if (toRemove==true){
-        let targetp= event.currentTarget.parent;
         targetp.remove();
+      }else{
+        touchnum++;
+        targetp.children[1].classList.toggle('done')
       }
     } 
   );
   let taskdata= document.querySelector('#taskdata').value;
   pspan.textContent=taskdata;
+  pspan.classList.add('pspan');
   count++;
   let pId='task'+count;
   p.appendChild(checkbox);
   p.appendChild(pspan);
-  p.appendChild(deletebtn)
+  p.appendChild(deletebtn);
+  p.classList.add('taskitem')
   p.id=pId;
   p.addEventListener('click', 
     function(e) {
