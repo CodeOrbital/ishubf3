@@ -1,0 +1,39 @@
+let plus= document.getElementById('plus');
+let addBtn= document.querySelector('#taskIn > button');                                     
+let taskList= document.querySelector('#taskList');
+let count=0;
+let touchnum=0;
+function addTask(){
+  const p = document.createElement('p');
+  const checkbox = document.createElement('input');
+  checkbox.type='checkbox';
+  const pspan = document.createElement('span');
+  let taskdata= document.querySelector('#taskdata').value;
+  pspan.textContent=taskdata;
+  count++;
+  let pId='task'+count;
+  p.appendChild(checkbox);
+  p.appendChild(pspan);
+  p.id=pId;
+  p.addEventListener('click', 
+    function(e) {
+      touchnum++;
+      let targ= e.currentTarget;
+      targ.classList.toggle('done');
+      if (touchnum % 2 == 0) {
+        checkbox.removeAttribute('checked','false');
+      } else {
+        checkbox.setAttribute('checked','true');
+      }
+    }
+  );
+  taskList.appendChild(p);
+  //let tasknum= taskList.childElementCount();
+  //let childspan= document.querySelectorAll('span')[count-1];
+  //childsapn.textContent= taskdata;
+}
+//addBtn.addEventListener('click',addTask);
+
+
+
+//confirm('Do you want to add a task?')

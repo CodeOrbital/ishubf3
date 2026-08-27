@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>DynoDigit</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
 </head>
-
 <body>
-  
+  <header>
+    <h1>To Do List</h1>
+    <h2>DynoDigit</h2>
+    <p>We provide different tools for your needs.</p>
+    <nav>
+      <ul class="vnav">
+        <li><a class="btn" href="../index.html">Home</a></li>
+        <li><a class="btn" href="./counter.html">Counter</a></li>
+        <li><a class="btn" href="./gallery.html">Gallery</a></li>
+        <li><a class="btn"href="#todo">To do list</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="todo">
+      <h3>To Do List</h3>
+      <p>Manage your tasks with our to do list.</p>
+      <div id="plusbox">
+        <button type="button" id="plus">
+          +
+        </button>
+      </div>
+      <div id="taskbox">
+        <form onsubmit="addTask(); event.preventDefault()">
+          <div id="taskIn">
+            <input id="taskdata" type="text" placeholder="Type your task">
+            <button style="margin-top:20px;" type="submit">Add Task</button>
+          </div>
+          <div id="taskList">
+            
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    
+  </footer>
+  <script src="../assets/js/todo.js"></script>
 </body>
-
 </html>
