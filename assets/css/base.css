@@ -144,3 +144,13 @@ li > a { font-size: 1.2rem; }
   padding: 10px;
   margin: 10px auto;
 }
+
+/*  */
+#galbox{
+  width: 70vw;
+  height: 70vw;
+}
+select, #poster{
+  font-size: 2rem;
+  margin: 20px auto;
+}

@@ -21,19 +21,33 @@
     </nav>
   </header>
   <main>
-    <section id="counter">
-      <h3>Counter</h3>
-      <p id="cnum">0</p>
-      <div class="flexra">
-        <button class="cont" id="reducer" type="button" onclick="decrement()">-</button>
-        <button class="cont" id="adder" type="button" onclick="increment()">+</button>
+    <section id="gallery">
+      <h3>Gallery</h3>
+      <p>Gallery of Social media logos</p>
+      <div>
+        <figure>
+          <img id="galbox" src="../assets/images/github.png" alt="Github logo">
+          <figcaption>Github</figcaption>
+        </figure>
       </div>
-      <div id="warning">Counter can't be negative!</div>
+      <div class="flexra">
+        <form onsubmit="showimg(); event.preventDefault()">
+          <select id="choice">
+            <option value="github">Github</option>
+            <option value="google">Google</option>
+            <option value="linkedin">LinkedIn</option>
+            <option value="facebook">Facebook</option>
+            <option value="youtube">YouTube</option>
+          </select>
+          <br>
+          <button id="poster" type="submit">Show</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer>
     
   </footer>
-  <script src="../assets/js/counter.js"></script>
+  <script src="../assets/js/gallery.js"></script>
 </body>
 </html>
