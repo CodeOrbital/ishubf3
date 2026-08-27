@@ -8,22 +8,36 @@ function addTask(){
   const checkbox = document.createElement('input');
   checkbox.type='checkbox';
   const pspan = document.createElement('span');
+  const deletebtn = document.createElement('button');
+  deletebtn.type='button';
+  deletebtn.classList.add('deletebtn');
+  deletebtn.textContent='Remove'
+  deletebtn.addEventListener('click',
+    function(event){
+      let toRemove=confirm('Do you want to remove the task?');
+      if (toRemove==true){
+        let targetp= event.currentTarget.parent;
+        targetp.remove();
+      }
+    } 
+  );
   let taskdata= document.querySelector('#taskdata').value;
   pspan.textContent=taskdata;
   count++;
   let pId='task'+count;
   p.appendChild(checkbox);
   p.appendChild(pspan);
+  p.appendChild(deletebtn)
   p.id=pId;
   p.addEventListener('click', 
     function(e) {
       touchnum++;
-      let targ= e.currentTarget;
-      targ.classList.toggle('done');
+      let targSpan= e.currentTarget.children[1];
+      targSpan.classList.toggle('done');
       if (touchnum % 2 == 0) {
-        checkbox.removeAttribute('checked','false');
+        checkbox.checked=false;
       } else {
-        checkbox.setAttribute('checked','true');
+        checkbox.checked=true;
       }
     }
   );
@@ -33,7 +47,3 @@ function addTask(){
   //childsapn.textContent= taskdata;
 }
 //addBtn.addEventListener('click',addTask);
-
-
-
-//confirm('Do you want to add a task?')
