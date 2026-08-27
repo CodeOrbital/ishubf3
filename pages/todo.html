@@ -25,11 +25,11 @@
       <h3>To Do List</h3>
       <p>Manage your tasks with our to do list.</p>
       <div id="plusbox">
-        <button type="button" id="plus">
+        <button type="button" id="plus" onclick="show()">
           +
         </button>
       </div>
-      <div id="taskbox">
+      <div id="taskBox">
         <form onsubmit="addTask(); event.preventDefault()">
           <div id="taskIn">
             <input id="taskdata" type="text" placeholder="Type your task">
@@ -39,6 +39,11 @@
             
           </div>
         </form>
+      </div>
+      
+      <div id="placehold">
+        There is no task that you added! <br>
+        Press the plus button to start adding your tasks.
       </div>
     </section>
   </main>

@@ -47,8 +47,13 @@ function addTask(){
     }
   );
   taskList.appendChild(p);
-  //let tasknum= taskList.childElementCount();
-  //let childspan= document.querySelectorAll('span')[count-1];
-  //childsapn.textContent= taskdata;
 }
-//addBtn.addEventListener('click',addTask);
+
+function show(){
+  let taskBox = document.querySelector('#taskBox');
+  taskBox.style.display='block';
+  let placehold= document.querySelector('#placehold');
+  placehold.style.display='none';
+  let plus= document.querySelector('#plus');
+  plus.style.display='none'
+}
