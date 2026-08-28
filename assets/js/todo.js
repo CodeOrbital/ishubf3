@@ -2,13 +2,13 @@ let plus= document.getElementById('plus');
 let addBtn= document.querySelector('#taskIn > button');                                     
 let taskList= document.querySelector('#taskList');
 let count=0;
-let touchnum=0;
 function addTask(){
   const p = document.createElement('p');
   const checkbox = document.createElement('input');
   checkbox.type='checkbox';
   const pspan = document.createElement('span');
   const deletebtn = document.createElement('button');
+  let touchnum=0;
   deletebtn.type='button';
   deletebtn.classList.add('deletebtn');
   deletebtn.textContent='Remove'
