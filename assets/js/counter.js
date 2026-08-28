@@ -1,13 +1,19 @@
-let current = 0;
+var current = 0;
 let cnum=document.getElementById('cnum');
 let warning= document.getElementById('warning');
+function restart(){
+  current= 0;
+  cnum.textContent= current;
+  warning.style.display= "none";
+  cnum.style.borderColor= 'dodgerblue';
+}
 function increment(){
   current= current + 1;
   cnum.textContent=current;
   warning.style.display= "none";
   cnum.style.borderColor= 'dodgerblue';
 }
-function decrement() {
+function decrement(){
   if (current >=1) {
     current = current - 1;
     cnum.textContent = current;
@@ -16,3 +22,6 @@ function decrement() {
     cnum.style.borderColor= 'red';
   }
 }
+
+let rbtn=document.querySelector('#reset');
+rbtn.addEventListener('click',restart)

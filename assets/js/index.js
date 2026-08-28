@@ -60,3 +60,18 @@ function toblack() {
     demop.style.color = 'black';
   }
 }
+let lists= document.querySelectorAll('#logerList li');
+let listCount= lists.length;
+for (let i = 0; i < listCount; i++){
+  lists[i].addEventListener('click',
+    function(event){
+      let clicked= event.currentTarget;
+      let next= clicked.nextElementSibling;
+      if(next!=null){
+        console.log(next.textContent);
+      }else{
+        console.log('No more list item!')
+      }
+    }
+  );
+}
