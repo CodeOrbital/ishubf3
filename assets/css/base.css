@@ -161,15 +161,25 @@ li > a { font-size: 1.2rem; }
   margin: 10px auto;
 }
 
-/*  */
+/* ------ */
 #galbox{
   width: 70vw;
   height: 70vw;
 }
 select, #poster{
-  font-size: 2rem;
-  margin: 20px auto;
+  font-size: 1.5rem;
+  margin: 10px auto;
 }
+#poster{
+  margin-bottom: 10vh;
+  margin-left: 10vw;
+}
+#imgsBox > img{
+  width: 15vw;
+  height: 15vw;
+  transition: 0.1s ease;
+}#imgsBox img:active{transform: scale(0.95);}
+
 
 /* ---------- */
 #todo{
