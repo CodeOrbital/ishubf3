@@ -361,6 +361,9 @@ select, #poster{
     margin: 5px;
     font-size: 2rem;
   } 
+  input{
+    font-size: 1.5rem
+  }
 }
 @media screen and (min-width: 1023.1px){
   body{
@@ -374,7 +377,7 @@ select, #poster{
     font-size: 2.5rem;
     }
   .btn {
-  display: inline-block;
+    display: inline-block;
     border: solid 1px white;
     border-radius: 20px;
     padding: 2.5vw;
@@ -384,6 +387,9 @@ select, #poster{
     margin: 5px;
     font-size: 2.5rem;
   } 
+  input{
+    font-size: 2rem
+  }
 }
 
 /*
