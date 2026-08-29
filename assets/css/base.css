@@ -48,6 +48,7 @@ h1{
   font-size: 3rem;
   font-family: cursive;
   color: cyan;
+  margin: 0.67rem auto;
   text-shadow: 0 0 10px white;
 }
 
