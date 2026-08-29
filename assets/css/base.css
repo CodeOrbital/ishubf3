@@ -47,7 +47,7 @@ h1{
 .brandn{
   font-size: 3rem;
   font-family: cursive;
-  color: blue;
+  color: cyan;
   text-shadow: 0 0 10px white;
 }
 
@@ -84,9 +84,12 @@ button{
   justify-content: space-around;
   width: 100%; 
   margin: auto;
-  height: 50vh;
+  min-height: 50vh;
 }
-.vnav li{width:100%;}
+.vnav li{
+  width:80%;
+}
+
 .vnav a{
   width: 100%;
 }
