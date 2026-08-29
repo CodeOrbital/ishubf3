@@ -6,6 +6,8 @@
 }
 body{
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -17,9 +19,18 @@ header, section{
   min-height: 100vh;
   display: block;
 }
+
+header{
+  background-image: url(../images/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 1vh 5vh blue;
+}
+
 footer{
   display: block;
 }
+
 article{
   background: dodgerblue;
   border: solid 0.5vw blue;
@@ -28,6 +39,31 @@ article{
   border-radius: 2vh;
 }
 
+h1{
+  font-size: 3rem;
+  color: Gold;
+}
+
+.brandn{
+  font-size: 3rem;
+  font-family: cursive;
+  color: blue;
+  text-shadow: 0 0 10px white;
+}
+
+.brandi{
+  margin: 20px auto;
+}
+
+nav{
+  background-color: white;
+  padding: 20px;
+  width: 80%;
+  margin: 3vh auto;
+  box-shadow: 0 0 1vh white;
+  border-radius: 2vw;
+}
+/* -------- */
 #demo{
   vertical-align: middle;
 }
@@ -46,7 +82,7 @@ button{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: max-content; 
+  width: 100%; 
   margin: auto;
   height: 50vh;
 }
@@ -55,6 +91,10 @@ button{
   width: 100%;
 }
 /* --------------*/
+p{
+  margin: 1vh auto;
+}
+
 ul, ol, menu {
   padding-left: 0;
   list-style-type: none;
@@ -88,6 +128,12 @@ li > a { font-size: 1.2rem; }
   display: flex;
   justify-content: space-around;
 }
+
+.mt5vh{
+  margin-top: 5vh;
+}
+
+
 
 .btn {
   display: inline-block;
@@ -165,6 +211,7 @@ li > a { font-size: 1.2rem; }
 #galbox{
   width: 70vw;
   height: 70vw;
+  background-color: white;
 }
 select, #poster{
   font-size: 1.5rem;
@@ -174,11 +221,25 @@ select, #poster{
   margin-bottom: 10vh;
   margin-left: 10vw;
 }
+
+#imgsBox{
+  background-color: dodgerblue;
+  padding: 3vh 2vw;
+  border-radius: 2vh;
+  width: 95%;
+  margin: auto;
+}
+
 #imgsBox > img{
   width: 15vw;
   height: 15vw;
+  background-color: white;
+  border-radius: 100%;
   transition: 0.1s ease;
-}#imgsBox img:active{transform: scale(0.95);}
+}
+#imgsBox img:active{
+  transform: scale(0.95);
+}
 
 
 /* ---------- */
