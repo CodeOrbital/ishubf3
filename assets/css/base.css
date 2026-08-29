@@ -54,6 +54,7 @@ h1{
 
 .brandi{
   margin: 20px auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav{
@@ -97,6 +98,7 @@ button{
 
 p{
   margin: 1vh auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 ul, ol, menu {
@@ -321,10 +323,10 @@ select, #poster{
 #logerList li{
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 5vw;
-  background: dodgerblue;
+  background: black;
   color: white;
   font-weight: 800;
-  border: solid 0.5vw blue;
+  /*border: solid 0.5vw blue; */
   border-radius: 2vh;
   width: 100%;
   margin: 3vh auto;
@@ -333,6 +335,7 @@ select, #poster{
 
 #logerList li:active{
   transform: scale(0.95);
+  background-color: #555;
 }
 
 /* ------ Responsive Design -----*/
