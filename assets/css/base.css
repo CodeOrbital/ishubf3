@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /*border: solid 1px;/**/
+  /*border: solid 1px red;/**/
 }
 body{
   text-align: center;
@@ -68,6 +68,12 @@ nav{
 
 /* ---- Common ---- */
 
+.flexrcc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .flexra button{
   margin: 10px auto;
 }
@@ -85,7 +91,7 @@ button{
   justify-content: space-around;
   width: 100%; 
   margin: auto;
-  min-height: 50vh;
+  min-height: 33vh;
 }
 
 .vnav li{
@@ -94,6 +100,13 @@ button{
 
 .vnav a{
   width: 100%;
+}
+
+.vnav2{
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5vh;
+  margin: auto;
 }
 
 p{
@@ -144,6 +157,21 @@ li > a {
   justify-content: space-around;
 }
 
+.flexca{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wfc{
+  width: fit-content;
+}
+
+.hfc{
+  height: fit-content;
+}
+
 .mt5vh{
   margin-top: 5vh;
 }
@@ -161,6 +189,21 @@ li > a {
 
 .btn:active {
   transform: scale(0.95);
+}
+
+.invitation{
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  padding: 3vh;
+  margin: 0 4vw;
+  background: black;
+  border: solid 0.5vh gold;
+  border-radius: 1.5vh;
+}
+
+.invitation > div{
+  margin: 0 auto;
 }
 
 /* ----- Demo -----*/
@@ -264,8 +307,9 @@ select, #poster{
 
 /* ------ To do list ------ */
 
-#todo{
-  margin-top: 150px;
+#todo:has(input:focus){
+  margin-top: 35vh;
+  
 }
 
 #plus{
