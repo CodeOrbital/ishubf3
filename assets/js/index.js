@@ -1,4 +1,6 @@
-function showp(){
+const form0= document.querySelector('form');
+function showp(form){
+  form.preventDefault();
   let demoin = document.getElementById('demoin').value;
   let demop = document.getElementById('demop')
   demop.style.display='block'
@@ -13,6 +15,7 @@ function showp(){
     demop.textContent=demoin;
   }
 }
+
 function tohello() {
   let demoin = document.getElementById('demoin').value;
   let demop = document.getElementById('demop')
@@ -75,3 +78,5 @@ for (let i = 0; i < listCount; i++){
     }
   );
 }
+
+form0.addEventListener('onsubmit', showp)
