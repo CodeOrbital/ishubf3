@@ -47,6 +47,9 @@ function addTask(){
     }
   );
   taskList.appendChild(p);
+  taskList.style.borderStyle='solid'
+  taskList.style.borderWidth='1px'
+  taskList.style.borderColor='white;'
 }
 
 function show(){

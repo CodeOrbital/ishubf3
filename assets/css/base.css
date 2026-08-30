@@ -295,6 +295,7 @@ select, #poster{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: 0 1vw;
 }
 
 .deletebtn{

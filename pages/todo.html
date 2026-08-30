@@ -34,7 +34,14 @@
       <div id="taskBox">
         <form onsubmit="addTask(); event.preventDefault()">
           <div id="taskIn">
-            <input id="taskdata" type="text" placeholder="Type your task" required>
+            <input 
+            id="taskdata" 
+            type="text" 
+            placeholder="Type your task" 
+            required
+            minlength="2"
+            maxlength="25"
+            >
             <button style="margin-top:20px;" type="submit">Add Task</button>
           </div>
           <div id="taskList">
