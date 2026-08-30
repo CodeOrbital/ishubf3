@@ -2,7 +2,8 @@ let plus= document.getElementById('plus');
 let addBtn= document.querySelector('#taskIn > button');                                     
 let taskList= document.querySelector('#taskList');
 let count=0;
-function addTask(){
+function addTask(e){
+  e.preventDefault();
   const p = document.createElement('p');
   const checkbox = document.createElement('input');
   checkbox.type='checkbox';
