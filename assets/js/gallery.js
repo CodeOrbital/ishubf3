@@ -1,6 +1,9 @@
 let img=document.getElementsByTagName('img')[0];
 let caption = document.getElementsByTagName('figcaption')[0];
-function showimg(){
+const form0= document.querySelector('form');
+
+function showimg(e){
+  e.preventDefault();
   let choice = document.getElementById("choice").value;
   let source = '../assets/images/'+choice+'.png';
   img.src = source;
@@ -27,3 +30,5 @@ for(let i = 0; i < iCount; i++){
     }
   );
 }
+
+form0.addEventListener('submit', showimg);
