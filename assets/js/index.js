@@ -1,9 +1,14 @@
 const form0= document.querySelector('form');
-function showp(form){
-  form.preventDefault();
+const textbtn1= document.querySelector('#txtChanger1');
+const colbtn1= document.querySelector('#colorChanger1');
+const textbtn0= document.querySelector('#txtChanger0');
+const colbtn0= document.querySelector('#colorChanger0');
+
+function showp(e){
+  e.preventDefault();
   let demoin = document.getElementById('demoin').value;
-  let demop = document.getElementById('demop')
-  demop.style.display='block'
+  let demop = document.getElementById('demop');
+  demop.style.display='block';
   if (demoin==''){
     demop.style.color='black';
     demop.style.borderColor='red';
@@ -79,4 +84,8 @@ for (let i = 0; i < listCount; i++){
   );
 }
 
-form0.addEventListener('onsubmit', showp)
+form0.addEventListener('submit', showp);
+txtChanger1.addEventListener('click', tohello);
+colorChanger1.addEventListener('click', tored);
+txtChanger0.addEventListener('click', toin);
+colorChanger0.addEventListener('click', toblack);
