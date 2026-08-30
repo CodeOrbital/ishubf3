@@ -9,7 +9,7 @@ function showp(){
   }
   else{
     demop.style.color='black';
-    demop.style.borderColor='dodgerblue';
+    demop.style.borderColor='blue';
     demop.textContent=demoin;
   }
 }

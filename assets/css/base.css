@@ -232,8 +232,9 @@ li > a {
   height: 50px;
   text-align: center;
 }
+
 #demop{
-  border: solid 1px;
+  border: solid 0.1rem;
   border-radius: 8px;
   display: none;
   padding: 5px;
