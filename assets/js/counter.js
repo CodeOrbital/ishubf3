@@ -1,8 +1,11 @@
 var current = 0;
-let cnum=document.getElementById('cnum');
-let warning= document.getElementById('warning');
+const cnum= document.getElementById('cnum');
+const warning= document.getElementById('warning');
 
-let rbtn=document.querySelector('#reset');
+const reducer= document.querySelector('#reducer');
+const adder= document.querySelector('#adder');
+
+let rbtn= document.querySelector('#reset');
 rbtn.addEventListener('click',restart)
 rbtn.style.display='none';
 
@@ -37,3 +40,6 @@ function decrement(){
     rbtn.style.margin='auto';
   }
 }
+
+reducer.addEventListener('click', decrement);
+adder.addEventListener('click', increment);
