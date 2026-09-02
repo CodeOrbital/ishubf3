@@ -1,5 +1,6 @@
-let plus= document.getElementById('plus');
-let addBtn= document.querySelector('#taskIn > button');                                     
+const plus= document.getElementById('plus');
+const addBtn= document.querySelector('#taskIn > button'); 
+const form0 = document.querySelector('form');
 let taskList= document.querySelector('#taskList');
 let count=0;
 function addTask(e){
@@ -12,7 +13,7 @@ function addTask(e){
   let touchnum=0;
   deletebtn.type='button';
   deletebtn.classList.add('deletebtn');
-  deletebtn.textContent='Remove'
+  deletebtn.textContent='Remove';
   deletebtn.addEventListener('click',
     function(event){
       let toRemove=confirm('Do you want to remove the task?');
@@ -50,8 +51,10 @@ function addTask(e){
   taskList.appendChild(p);
   taskList.style.borderStyle='solid'
   taskList.style.borderWidth='1px'
-  taskList.style.borderColor='white;'
+  taskList.style.borderColor='white';
 }
+
+form0.addEventListener('submit', addTask)
 
 function show(){
   let taskBox = document.querySelector('#taskBox');
@@ -61,3 +64,5 @@ function show(){
   let plus= document.querySelector('#plus');
   plus.style.display='none'
 }
+
+plus.addEventListener('click', show)
