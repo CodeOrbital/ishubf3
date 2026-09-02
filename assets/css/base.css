@@ -27,9 +27,9 @@ header{
   box-shadow: 0 1vh 5vh blue;
   margin-bottom: 3vh auto;
   border-radius: 0;
-  min-height: fit-content;
+  min-height: max-content;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 section{
