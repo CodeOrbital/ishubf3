@@ -1,5 +1,4 @@
 const plus= document.getElementById('plus');
-const addBtn= document.querySelector('#taskIn > button'); 
 const form0 = document.querySelector('form');
 let taskList= document.querySelector('#taskList');
 let count=0;
